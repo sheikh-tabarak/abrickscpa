@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.circle {
+    /* border: solid 2px yellow; */
+    position: relative;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    height: 50px;
+    border-radius: 50%;
+    padding:10px;
+    background-color: #7d93cc;
+    /* padding: 0px; */
+  }
+
+  .circle::before {
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    /* width: 10px;
+    height: 10px; */
+    border-radius: 50%;
+    background-color: #e5e65e;
+    offset-path: path('M 25 0 C 38.31 0 50 11.69 50 25 C 50 38.31 38.31 50 25 50 C 11.69 50 0 38.31 0 25 C 0 11.69 11.69 0 25 0');
+    offset-anchor: 50% 50%;
+    animation: rotate 2s linear;
+  }
+  
+
+  
+  .square:hover{
+    .circle::before{
+        content: "";
+        /* position: absolute; */
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #e5e65e;
+        offset-path: path('M 25 0 C 38.31 0 50 11.69 50 25 C 50 38.31 38.31 50 25 50 C 11.69 50 0 38.31 0 25 C 0 11.69 11.69 0 25 0');
+        offset-anchor: 50% 50%;
+        animation: rotate 2s linear infinite;
+      }
+  }
+  
+  .circle:hover::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #e5e65e;
+    offset-path: path('M 25 0 C 38.31 0 50 11.69 50 25 C 50 38.31 38.31 50 25 50 C 11.69 50 0 38.31 0 25 C 0 11.69 11.69 0 25 0');
+    offset-anchor: 100% 100%;
+    animation: rotate 2s linear infinite;
+  }
+
+  
+  @keyframes rotate {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
+
+
+  @keyframes underline-animation {
+    0% {
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+    100% {
+      text-decoration: underline;
+      border-bottom: 2px solid blue-500;
+    }
+  }
