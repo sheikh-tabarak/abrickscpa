@@ -24,17 +24,18 @@
 
 <body class="h-screen bg-gray-100 flex flex-col">
 
-    <header class="bg-gray-300 px-6 shadow-md sticky top-0 z-50">
+    <header class="bg-gray-300 px-6 shadow-md sticky top-0 z-50 hidden lg:block">
         <div class="container mx-auto py-4 px-8 flex justify-between items-center">
 
             <img class="h-16 cursor-pointer" src="images/logo.png" alt="">
             <nav class="flex items-center  gap-4">
                 <a href="#"
-                class="hover:bg-[#E5E65E] rounded-md p-3 text-gray-800 hover:text-gray-700 transition duration-500 ease-in-out mr-4 uppercase font-semibold">Audits</a>
-            <a href="#"
-                class="hover:bg-[#E5E65E] rounded-md p-3 text-gray-800 hover:text-gray-900 transition duration-300 ease-in-out mr-4 uppercase font-semibold">Reviews</a>
-            <a href="#" class="hover:bg-[#E5E65E] rounded-md p-3 text-gray-800 hover:text-gray-900 transition duration-300 ease-in-out uppercase font-semibold">Compilations</a>
-      
+                    class="hover:bg-[#E5E65E] rounded-md p-3 text-gray-800 hover:text-gray-700 transition duration-500 ease-in-out mr-4 uppercase font-semibold">Audits</a>
+                <a href="#"
+                    class="hover:bg-[#E5E65E] rounded-md p-3 text-gray-800 hover:text-gray-900 transition duration-300 ease-in-out mr-4 uppercase font-semibold">Reviews</a>
+                <a href="#"
+                    class="hover:bg-[#E5E65E] rounded-md p-3 text-gray-800 hover:text-gray-900 transition duration-300 ease-in-out uppercase font-semibold">Compilations</a>
+
                 <a href="#"
                     class="hover:bg-[#E5E65E] rounded-md p-3 text-gray-800 hover:text-gray-900 transition duration-300 ease-in-out mr-4 uppercase font-semibold">FAQs</a>
                 <a href="#"
@@ -43,281 +44,218 @@
         </div>
     </header>
 
-    <main class=" overflow-y-auto">
-
-    <hero class="relative container flex items-center bg-[#062d60] p-16 ">
-        <div class="w-1/2 space-y-8  shadow-mb mb-4 pr-12">
-            <span class="uppercase bg-[#7d93cc] rounded-full py-2 px-6 font-semibold text-white text-sm">From the Trusted Texas CPA</span>
-            <h1 class=" text-5xl font-bold text-white leading-[1.2]">Audits, Reviews, and Compilations
-            </h1>
-            <p class="text-lg text-white">
-                A Bricks CPA specializes in certain industries with Audit, Review, and Compilation services for businesses seeking personalized assurance solutions. Our services go beyond assurance and grant expert industry insights that set the stage for improved financials, operations and business.
-            </p>
-            <div class="flex gap-4">
-
-                <button class="bg-[#E5E65D] hover:bg-[#cece5f] text-[#062d60]  font-bold py-4 px-6 rounded">GET
-                    STARTED.</button>
-                <button class="bg-gray-200 hover:bg-gray-300 text-gray-600 font-bold py-4 px-6 rounded ml-4">BOOK A
-                    DEMO</button>
+    <main class="lg:hidden">
+        <div class="h-screen flex justify-center items-center bg-gray-100">
+            <div class="max-w-md p-4 bg-white rounded shadow-md">
+              <h2 class="text-2xl font-bold mb-4">Mobile Devices Not Supported</h2>
+              <p class="text-lg mb-6">This site is not optimized for mobile devices. Please visit on desktop for the best experience.</p>
+              <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Visit on Desktop</button>
             </div>
-        </div>
-        <div class="w-1/2 pr-20 pl-2 flex items-end">
-            <img src="images/dashboard.png" alt="">
-        </div>
+          </div>
+    </main>
 
-        <img class="absolute bottom-0 right-0 w-[37rem]" src="images/man.jpg" alt="Bricks Coggin">
-    </hero>
+    <main class=" overflow-y-auto hidden lg:block">
 
-    <section class="text-gray-600 body-font">
+        <section class="bg-[#062d60]">
+            <div
+                class="relative container mx-auto flex w-full justify-center items-center bg-[#062d60] p-16 bg-[#062d60]">
+                <div class="w-1/2 space-y-8  shadow-mb mb-4 pr-12">
+                    <span class="uppercase bg-[#7d93cc] rounded-full py-2 px-6 font-semibold text-white text-sm">From
+                        the Trusted Texas CPA</span>
+                    <h1 class=" text-5xl font-bold text-white leading-[1.2]">Audits, Reviews, and Compilations
+                    </h1>
+                    <p class="text-lg text-white">
+                        A Bricks CPA specializes in certain industries with Audit, Review, and Compilation services for
+                        businesses seeking personalized assurance solutions. Our services go beyond assurance and grant
+                        expert industry insights that set the stage for improved financials, operations and business.
+                    </p>
+                    <div class="flex gap-4">
 
-        <div class="container px-12 py-4 mx-auto">
-            <div class="container px-5 mx-auto">
+                        <button class="bg-[#E5E65D] hover:bg-[#cece5f] text-[#062d60]  font-bold py-4 px-6 rounded">GET
+                            STARTED.</button>
+                        <button
+                            class="bg-gray-200 hover:bg-gray-300 text-gray-600 font-bold py-4 px-6 rounded ml-4">BOOK A
+                            DEMO</button>
+                    </div>
+                </div>
+                <div class="w-1/2 pr-20 pl-2 flex items-end">
+                    <img src="images/dashboard.png" alt="">
+                </div>
+                <img class="absolute bottom-0 right-0 w-[37rem]" src="images/man.jpg" alt="Bricks Coggin">
+            </div>
+        </section>
+
+        <section class="text-gray-600 body-font">
+
+            <div class="container px-12 py-4 mx-auto">
+                <div class="container px-5 mx-auto">
+                    <div class="flex flex-col text-center w-full my-8">
+                        <h2 class="text-sm uppercase text-[#7d93cc] tracking-widest font-medium mb-1">My Services</h2>
+                        <h1 class="title-font mb-4 sm:text-3xl text-2xl font-bold text-[#062d60]">Industries We Serve
+                        </h1>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">As specialists in the following areas and
+                            CPA
+                            services, we have a firm grasp of the operations, regulations and requirements involved.
+                            This
+                            ensures efficient integration of our capabilities with your business finances and processes
+                            in
+                            the following areas:</p>
+                    </div>
+
+                    <div class="flex gap-2 justify-center mb-8 items-center">
+                        <div
+                            class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
+                            Non-profit
+                        </div>
+                        <div
+                            class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
+
+                            Non-profit with Single Audit
+                        </div>
+                        <div
+                            class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
+                            Manufacturing
+
+                        </div>
+                        <div
+                            class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
+                            Construction
+
+                        </div>
+                        <div
+                            class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
+                            Oil and Gas
+
+                        </div>
+                        <div
+                            class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
+                            Common Interest Realty Association
+
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap">
+                        <div class="p-4 lg:w-1/3 ">
+                            <div
+                                class="h-full  bg-opacity-75 px-8 py-12 hover:border-gray-300 border-gray-300 border-[1px] duration-500 hover:-translate-y-2 hover:shadow-lg hover:border-[1px] rounded-lg overflow-hidden text-center relative">
+                                <div class="flex justify-center w-full">
+                                    <img class="w-28 h-28" src="icons/audits.svg" alt="">
+                                </div>
+
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mt-5 mb-2">
+                                    SERVICES
+                                </h2>
+                                <h1 class="title-font sm:text-2xl text-xl font-semibold text-[#062d60] mb-2">Financial
+                                    Statement
+                                    Audits</h1>
+                                <p class="leading-relaxed mb-8 text-base  text-gray-400">Maximum assurance for all your
+                                    objectives. Leverage our industry
+                                    expertise and powerful accounting network for reputable audits and instrumental
+                                    business
+                                    material.</p>
+
+                                <a href="#"
+                                    class="absolute bottom-8 right-8 left-8 rounded-md bg-[#e5e65e] px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm tracking-wide uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Learn
+                                    More </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4 lg:w-1/3 ">
+                            <div
+                                class="h-full bg-opacity-75 px-8 py-12 hover:border-gray-300 border-gray-300 border-[1px] duration-500 hover:-translate-y-2 hover:shadow-lg hover:border-[1px] rounded-lg overflow-hidden text-center relative">
+                                <div class="flex justify-center w-full">
+                                    <img class="w-28 h-28" src="icons/review.svg" alt="">
+                                </div>
+
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mt-5 mb-2">
+                                    SERVICES
+                                </h2>
+                                <h1 class="title-font  sm:text-2xl text-xl font-semibold text-gray-900 mb-2">Financial
+                                    Statement
+                                    Reviews</h1>
+                                <p class="leading-relaxed mb-8 text-base  text-gray-400">Industry trusted, limited
+                                    assurance
+                                    tailored to a range of specifications. High-accuracy reviews and cost-effective
+                                    insights
+                                    for
+                                    every business.</p>
+
+                                <a href="#"
+                                    class="absolute bottom-8 right-8 left-8 rounded-md bg-[#e5e65e] px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm tracking-wide uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Learn
+                                    More </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4 lg:w-1/3 ">
+                            <div
+                                class="h-full bg-opacity-75 px-8 py-12 hover:border-gray-300 border-gray-300 border-[1px] duration-500 hover:-translate-y-2 hover:shadow-lg hover:border-[1px] rounded-lg overflow-hidden text-center relative">
+                                <div class="flex justify-center w-full">
+                                    <img class="w-28 h-28" src="icons/compilations.svg" alt="">
+                                </div>
+
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mt-5 mb-2">
+                                    SERVICES
+                                </h2>
+                                <h1 class="title-font  sm:text-2xl text-xlg font-semibold text-gray-900 mb-2">Financial
+                                    Statement Compilations</h1>
+                                <p class="leading-relaxed mb-8 text-base  text-gray-400">Expert financial statements
+                                    compiled
+                                    using industry knowledge and systems. Meet assurance goals and leverage CPA
+                                    financial
+                                    statements for clear indicators and informed decisions.</p>
+
+                                <a href="#"
+                                    class="absolute bottom-8 right-8 left-8 rounded-md bg-[#e5e65e] px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm tracking-wide uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Learn
+                                    More </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="text-gray-600 body-font bg-[#062d60]">
+            <div class="container  py-24 px-16 mx-auto">
+                <div class="flex items-center sm:items-center ">
+                    <div class="lg:w-1/2 pr-8">
+                        <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">How can A Bricks CPA
+                            help
+                            you today?</h1>
+                        <div class="py-4">
+                            <p class="text-gray-300 py-2">
+                                With our Personalized CPA Services, we offer:
+                            </p>
+                            <ul class="list-disc ml-4 py-2 text-gray-300">
+                                <li>One-on-one financial consultations</li>
+                                <li>Tailored financial planning</li>
+                                <li>Custom tax strategies</li>
+                                <li>Personalized audit and review services</li>
+                            </ul>
+                            <p class="text-gray-300 py-2">
+                                Experience dedicated, professional, and customized financial solutions with A Bricks
+                                CPA.
+                            </p>
+                        </div>
+
+                        <button
+                            class="bg-[#E5E65D] hover:bg-[#cece5f] text-[#062d60]  font-bold py-4 px-6 rounded">Let's
+                            start a conversation!</button>
+                    </div>
+
+                    <iframe class="rounded-lg lg:w-1/2" width="100%" height="350"
+                        src="https://www.youtube.com/embed/Y4Zy9qUMzDA" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-gray-600 body-font">
+            <div class="container px-16 py-4 mx-auto flex flex-wrap">
+
                 <div class="flex flex-col text-center w-full my-8">
-                    <h2 class="text-sm uppercase text-[#7d93cc] tracking-widest font-medium mb-1">My Services</h2>
-                    <h1 class="title-font mb-4 sm:text-3xl text-2xl font-bold text-[#062d60]">Industries We Serve</h1>
-                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">As specialists in the following areas and CPA
-                        services, we have a firm grasp of the operations, regulations and requirements involved. This
-                        ensures efficient integration of our capabilities with your business finances and processes in
-                        the following areas:</p>
+                    <h2 class="text-sm uppercase text-[#7d93cc] tracking-widest font-medium mb-1">Why Me?</h2>
+                    <h1 class="title-font mb-4 sm:text-3xl text-2xl font-bold text-[#062d60]">Why Choose A Bricks CPA?
+                    </h1>
                 </div>
 
-                <div class="flex gap-2 justify-center mb-8 items-center">
-                    <div
-                        class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
-                        Non-profit
-                    </div>
-                    <div
-                        class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
-
-                        Non-profit with Single Audit
-                    </div>
-                    <div
-                        class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
-                        Manufacturing
-
-                    </div>
-                    <div
-                        class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
-                        Construction
-
-                    </div>
-                    <div
-                        class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
-                        Oil and Gas
-
-                    </div>
-                    <div
-                        class="duration-500 hover:bg-[#e5e65e] cursor-pointer relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10">
-                        Common Interest Realty Association
-
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap">
-                    <div class="p-4 lg:w-1/3 ">
-                        <div
-                            class="h-full  bg-opacity-75 px-8 py-12 hover:border-gray-300 border-gray-300 border-[1px] duration-500 hover:-translate-y-2 hover:shadow-lg hover:border-[1px] rounded-lg overflow-hidden text-center relative">
-                            <div class="flex justify-center w-full">
-                                <img class="w-28 h-28" src="icons/audits.svg" alt="">
-                            </div>
-
-                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mt-5 mb-2">SERVICES
-                            </h2>
-                            <h1 class="title-font sm:text-2xl text-xl font-semibold text-[#062d60] mb-2">Financial
-                                Statement
-                                Audits</h1>
-                            <p class="leading-relaxed mb-8 text-base  text-gray-400">Maximum assurance for all your
-                                objectives. Leverage our industry
-                                expertise and powerful accounting network for reputable audits and instrumental business
-                                material.</p>
-
-                            <a href="#"
-                                class="absolute bottom-8 right-8 left-8 rounded-md bg-[#e5e65e] px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm tracking-wide uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Learn
-                                More </a>
-                        </div>
-                    </div>
-
-                    <div class="p-4 lg:w-1/3 ">
-                        <div
-                            class="h-full bg-opacity-75 px-8 py-12 hover:border-gray-300 border-gray-300 border-[1px] duration-500 hover:-translate-y-2 hover:shadow-lg hover:border-[1px] rounded-lg overflow-hidden text-center relative">
-                            <div class="flex justify-center w-full">
-                                <img class="w-28 h-28" src="icons/review.svg" alt="">
-                            </div>
-
-                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mt-5 mb-2">SERVICES
-                            </h2>
-                            <h1 class="title-font  sm:text-2xl text-xl font-semibold text-gray-900 mb-2">Financial
-                                Statement
-                                Reviews</h1>
-                            <p class="leading-relaxed mb-8 text-base  text-gray-400">Industry trusted, limited assurance
-                                tailored to a range of specifications. High-accuracy reviews and cost-effective insights
-                                for
-                                every business.</p>
-
-                            <a href="#"
-                                class="absolute bottom-8 right-8 left-8 rounded-md bg-[#e5e65e] px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm tracking-wide uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Learn
-                                More </a>
-                        </div>
-                    </div>
-
-                    <div class="p-4 lg:w-1/3 ">
-                        <div
-                            class="h-full bg-opacity-75 px-8 py-12 hover:border-gray-300 border-gray-300 border-[1px] duration-500 hover:-translate-y-2 hover:shadow-lg hover:border-[1px] rounded-lg overflow-hidden text-center relative">
-                            <div class="flex justify-center w-full">
-                                <img class="w-28 h-28" src="icons/compilations.svg" alt="">
-                            </div>
-
-                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mt-5 mb-2">SERVICES
-                            </h2>
-                            <h1 class="title-font  sm:text-2xl text-xlg font-semibold text-gray-900 mb-2">Financial
-                                Statement Compilations</h1>
-                            <p class="leading-relaxed mb-8 text-base  text-gray-400">Expert financial statements
-                                compiled
-                                using industry knowledge and systems. Meet assurance goals and leverage CPA financial
-                                statements for clear indicators and informed decisions.</p>
-
-                            <a href="#"
-                                class="absolute bottom-8 right-8 left-8 rounded-md bg-[#e5e65e] px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm tracking-wide uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Learn
-                                More </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section class="text-gray-600 body-font">
-        <div class="container bg-[#062d60] py-24 px-16">
-            <div class="flex items-center sm:items-center">
-                <div class="lg:w-1/2 pr-8">
-                    <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">How can A Bricks CPA help
-                        you today?</h1>
-                    <div class="py-4">
-                        <p class="text-gray-300 py-2">
-                            With our Personalized CPA Services, we offer:
-                        </p>
-                        <ul class="list-disc ml-4 py-2 text-gray-300">
-                            <li>One-on-one financial consultations</li>
-                            <li>Tailored financial planning</li>
-                            <li>Custom tax strategies</li>
-                            <li>Personalized audit and review services</li>
-                        </ul>
-                        <p class="text-gray-300 py-2">
-                            Experience dedicated, professional, and customized financial solutions with A Bricks CPA.
-                        </p>
-                    </div>
-
-                    <button class="bg-[#E5E65D] hover:bg-[#cece5f] text-[#062d60]  font-bold py-4 px-6 rounded">Let's
-                        start a conversation!</button>
-                </div>
-
-                <iframe class="rounded-lg lg:w-1/2" width="100%" height="300"
-                    src="https://www.youtube.com/embed/Y4Zy9qUMzDA" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section class="text-gray-600 body-font">
-        <div class="container px-16 py-4 mx-auto flex flex-wrap">
-
-            <div class="flex flex-col text-center w-full my-8">
-                <h2 class="text-sm uppercase text-[#7d93cc] tracking-widest font-medium mb-1">Why Me?</h2>
-                <h1 class="title-font mb-4 sm:text-3xl text-2xl font-bold text-[#062d60]">Why Choose A Bricks CPA?</h1>
-            </div>
-
-
-            <div class="flex flex-wrap my-2">
-                <div class="p-4 lg:w-1/2 md:w-full square">
-                    <div
-                        class="flex items-center border-[1px] hover:bg-gray-200 rounded-lg border-gray-300 hover:scale-[1.02] cursor-pointer duration-300 p-5 sm:flex-row flex-col">
-                        <div
-                            class="circle w-12 h-12 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-[#7d93cc] flex-shrink-0">
-                            <svg fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                                stroke="#ffffff">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <g id="Knowledge">
-                                        <path
-                                            d="M397.5765,258.8732,269.125,287.3982v183.75l134.0506-29.8367A13.0954,13.0954,0,0,0,413.5,428.5358V271.6478A13.0751,13.0751,0,0,0,397.5765,258.8732Zm-18.4634,141.75-70,15.5753c-16.7352,3.5675-22.5757-21.6251-5.6866-25.6369l70-15.5753C390.3091,371.5209,395.9274,396.6024,379.1131,400.6227Zm0-61.25-70,15.5753c-16.7352,3.5675-22.5757-21.6251-5.6866-25.6369l70-15.5753C390.3091,310.2709,395.9274,335.3524,379.1131,339.3727Z">
-                                        </path>
-                                        <path
-                                            d="M98.5,271.6478v156.888a13.0193,13.0193,0,0,0,10.239,12.7757l134.136,29.8367v-183.75l-128.4494-28.525A13.0427,13.0427,0,0,0,98.5,271.6478Zm39.9881,40.3385,70,15.5752a13.13,13.13,0,1,1-5.6866,25.6369l-70-15.5752C116.0214,333.6135,121.5692,308.52,138.4881,311.9863Zm0,61.25,70,15.5752a13.13,13.13,0,1,1-5.6866,25.6369l-70-15.5752C116.0214,394.8635,121.5692,369.77,138.4881,373.2363Z">
-                                        </path>
-                                        <path
-                                            d="M295.375,198.4114h-78.75C211.0644,262.2762,300.8758,262.3157,295.375,198.4114Z">
-                                        </path>
-                                        <path
-                                            d="M223.8006,172.1614H288.114l16.8869-23.9749a59.9765,59.9765,0,0,0-6.7377-76.65c-52.5556-50.1672-131.6495,16.2162-91.2619,76.65Z">
-                                        </path>
-                                        <path
-                                            d="M339.0823,176.9979c4.3088,2.01,15.4449,10.3991,20.4309,9.7786,13.0267.3108,18.1793-18.0822,6.571-24.4941l-13.8769-8.014C337.134,145.8773,324.2867,168.125,339.0823,176.9979Z">
-                                        </path>
-                                        <path
-                                            d="M159.7415,154.263l-13.8855,8.0152c-11.6126,6.4161-6.4515,24.8005,6.571,24.4983,5.0458.5928,16.06-7.7524,20.44-9.7744C187.662,168.1154,174.8254,145.9082,159.7415,154.263Z">
-                                        </path>
-                                        <path
-                                            d="M346.3967,113.8626a13.1256,13.1256,0,0,0,13.125,13.125h16.0218c17.2522-.2916,17.2479-25.9584,0-26.25H359.5217A13.1257,13.1257,0,0,0,346.3967,113.8626Z">
-                                        </path>
-                                        <path
-                                            d="M136.4053,126.9876H152.427c17.2522-.2916,17.2479-25.9584,0-26.25H136.4053a13.125,13.125,0,0,0,0,26.25Z">
-                                        </path>
-                                        <path
-                                            d="M345.6533,75.2182c5.0458.5907,16.0517-7.7566,20.4309-9.7786,14.802-8.876,1.94-31.1206-13.125-22.73l-13.8769,8.0151C327.4676,57.1361,332.633,75.5258,345.6533,75.2182Z">
-                                        </path>
-                                        <path
-                                            d="M145.856,65.4439c4.3087,2.01,15.4513,10.397,20.4394,9.7743,13.0289.3066,18.1793-18.0842,6.5711-24.4983l-13.8855-8.014C143.8928,34.34,131.0668,56.5647,145.856,65.4439Z">
-                                        </path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="flex-grow">
-                            <h2 class="text-[#062d60] text-lg title-font font-semibold mb-2">Deep Industry Knowledge
-                            </h2>
-                            <p class="leading-relaxed text-sm">We remain in step with the shifting regulations and
-                                competitor practices in your industry. We provide vital take aways for businesses
-                                seeking to strengthen their compliance, financials and performance. </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-4 lg:w-1/2 md:w-full square">
-                    <div
-                        class="flex items-center border-[1px] hover:bg-gray-200 rounded-lg border-gray-300 hover:scale-[1.02] cursor-pointer duration-300 p-5 sm:flex-row flex-col">
-                        <div
-                            class="circle w-12 h-12 sm:mr-8  sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-[#7d93cc] flex-shrink-0">
-                            <svg style=" margin: auto;" fill="#fff" viewBox="0 0 36 36" version="1.1"
-                                preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <title>chat-bubble-outline-badged</title>
-                                    <path
-                                        d="M33.38,12.69a7.43,7.43,0,0,1-1.89.66A10.35,10.35,0,0,1,32,16.5a11.08,11.08,0,0,1-3.71,8.11,1,1,0,0,0-.32.73l0,5.34-4.38-2.79a1,1,0,0,0-.83-.11A16,16,0,0,1,18,28.5c-7.72,0-14-5.38-14-12s6.28-12,14-12a16,16,0,0,1,4.55.66A7.44,7.44,0,0,1,23,3.22a18,18,0,0,0-5-.72c-8.82,0-16,6.28-16,14s7.18,14,16,14a18,18,0,0,0,4.88-.68l5.53,3.52a1,1,0,0,0,1.54-.84l0-6.73a13,13,0,0,0,4-9.27A12.32,12.32,0,0,0,33.38,12.69Z"
-                                        class="clr-i-outline--badged clr-i-outline-path-1--badged"></path>
-                                    <path d="M11,15.5a1,1,0,0,0,0,2H25a1,1,0,0,0,0-2Z"
-                                        class="clr-i-outline--badged clr-i-outline-path-2--badged"></path>
-                                    <path d="M14.25,20.5a1,1,0,0,0,0,2h7.5a1,1,0,0,0,0-2Z"
-                                        class="clr-i-outline--badged clr-i-outline-path-3--badged"></path>
-                                    <path
-                                        d="M10.28,11.5a1,1,0,0,0,1,1H24.72a1,1,0,0,0,.83-.47A7.53,7.53,0,0,1,24,10.5H11.28A1,1,0,0,0,10.28,11.5Z"
-                                        class="clr-i-outline--badged clr-i-outline-path-4--badged"></path>
-                                    <circle cx="30" cy="6" r="5"
-                                        class="clr-i-outline--badged clr-i-outline-path-5--badged clr-i-badge"></circle>
-                                    <rect x="0" y="0" width="36" height="36" fill-opacity="0"></rect>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="flex-grow">
-                            <h2 class="text-[#062d60] text-lg title-font font-semibold mb-2">Personalized CPA Services
-                            </h2>
-                            <p class="leading-relaxed text-sm">We are known for working closely with our clients and
-                                their in-house team to produce accurate results and guidance towards improved internal
-                                controls, finances and operations.</p>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="flex flex-wrap my-2">
                     <div class="p-4 lg:w-1/2 md:w-full square">
@@ -325,37 +263,52 @@
                             class="flex items-center border-[1px] hover:bg-gray-200 rounded-lg border-gray-300 hover:scale-[1.02] cursor-pointer duration-300 p-5 sm:flex-row flex-col">
                             <div
                                 class="circle w-12 h-12 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-[#7d93cc] flex-shrink-0">
-                                <svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                <svg fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
                                     stroke="#ffffff">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M9.918 10.0005H7.082C6.66587 9.99708 6.26541 10.1591 5.96873 10.4509C5.67204 10.7427 5.50343 11.1404 5.5 11.5565V17.4455C5.5077 18.3117 6.21584 19.0078 7.082 19.0005H9.918C10.3341 19.004 10.7346 18.842 11.0313 18.5502C11.328 18.2584 11.4966 17.8607 11.5 17.4445V11.5565C11.4966 11.1404 11.328 10.7427 11.0313 10.4509C10.7346 10.1591 10.3341 9.99708 9.918 10.0005Z"
-                                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M9.918 4.0006H7.082C6.23326 3.97706 5.52559 4.64492 5.5 5.4936V6.5076C5.52559 7.35629 6.23326 8.02415 7.082 8.0006H9.918C10.7667 8.02415 11.4744 7.35629 11.5 6.5076V5.4936C11.4744 4.64492 10.7667 3.97706 9.918 4.0006Z"
-                                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M15.082 13.0007H17.917C18.3333 13.0044 18.734 12.8425 19.0309 12.5507C19.3278 12.2588 19.4966 11.861 19.5 11.4447V5.55666C19.4966 5.14054 19.328 4.74282 19.0313 4.45101C18.7346 4.1592 18.3341 3.9972 17.918 4.00066H15.082C14.6659 3.9972 14.2654 4.1592 13.9687 4.45101C13.672 4.74282 13.5034 5.14054 13.5 5.55666V11.4447C13.5034 11.8608 13.672 12.2585 13.9687 12.5503C14.2654 12.8421 14.6659 13.0041 15.082 13.0007Z"
-                                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M15.082 19.0006H17.917C18.7661 19.0247 19.4744 18.3567 19.5 17.5076V16.4936C19.4744 15.6449 18.7667 14.9771 17.918 15.0006H15.082C14.2333 14.9771 13.5256 15.6449 13.5 16.4936V17.5066C13.525 18.3557 14.2329 19.0241 15.082 19.0006Z"
-                                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
+                                        <g id="Knowledge">
+                                            <path
+                                                d="M397.5765,258.8732,269.125,287.3982v183.75l134.0506-29.8367A13.0954,13.0954,0,0,0,413.5,428.5358V271.6478A13.0751,13.0751,0,0,0,397.5765,258.8732Zm-18.4634,141.75-70,15.5753c-16.7352,3.5675-22.5757-21.6251-5.6866-25.6369l70-15.5753C390.3091,371.5209,395.9274,396.6024,379.1131,400.6227Zm0-61.25-70,15.5753c-16.7352,3.5675-22.5757-21.6251-5.6866-25.6369l70-15.5753C390.3091,310.2709,395.9274,335.3524,379.1131,339.3727Z">
+                                            </path>
+                                            <path
+                                                d="M98.5,271.6478v156.888a13.0193,13.0193,0,0,0,10.239,12.7757l134.136,29.8367v-183.75l-128.4494-28.525A13.0427,13.0427,0,0,0,98.5,271.6478Zm39.9881,40.3385,70,15.5752a13.13,13.13,0,1,1-5.6866,25.6369l-70-15.5752C116.0214,333.6135,121.5692,308.52,138.4881,311.9863Zm0,61.25,70,15.5752a13.13,13.13,0,1,1-5.6866,25.6369l-70-15.5752C116.0214,394.8635,121.5692,369.77,138.4881,373.2363Z">
+                                            </path>
+                                            <path
+                                                d="M295.375,198.4114h-78.75C211.0644,262.2762,300.8758,262.3157,295.375,198.4114Z">
+                                            </path>
+                                            <path
+                                                d="M223.8006,172.1614H288.114l16.8869-23.9749a59.9765,59.9765,0,0,0-6.7377-76.65c-52.5556-50.1672-131.6495,16.2162-91.2619,76.65Z">
+                                            </path>
+                                            <path
+                                                d="M339.0823,176.9979c4.3088,2.01,15.4449,10.3991,20.4309,9.7786,13.0267.3108,18.1793-18.0822,6.571-24.4941l-13.8769-8.014C337.134,145.8773,324.2867,168.125,339.0823,176.9979Z">
+                                            </path>
+                                            <path
+                                                d="M159.7415,154.263l-13.8855,8.0152c-11.6126,6.4161-6.4515,24.8005,6.571,24.4983,5.0458.5928,16.06-7.7524,20.44-9.7744C187.662,168.1154,174.8254,145.9082,159.7415,154.263Z">
+                                            </path>
+                                            <path
+                                                d="M346.3967,113.8626a13.1256,13.1256,0,0,0,13.125,13.125h16.0218c17.2522-.2916,17.2479-25.9584,0-26.25H359.5217A13.1257,13.1257,0,0,0,346.3967,113.8626Z">
+                                            </path>
+                                            <path
+                                                d="M136.4053,126.9876H152.427c17.2522-.2916,17.2479-25.9584,0-26.25H136.4053a13.125,13.125,0,0,0,0,26.25Z">
+                                            </path>
+                                            <path
+                                                d="M345.6533,75.2182c5.0458.5907,16.0517-7.7566,20.4309-9.7786,14.802-8.876,1.94-31.1206-13.125-22.73l-13.8769,8.0151C327.4676,57.1361,332.633,75.5258,345.6533,75.2182Z">
+                                            </path>
+                                            <path
+                                                d="M145.856,65.4439c4.3087,2.01,15.4513,10.397,20.4394,9.7743,13.0289.3066,18.1793-18.0842,6.5711-24.4983l-13.8855-8.014C143.8928,34.34,131.0668,56.5647,145.856,65.4439Z">
+                                            </path>
+                                        </g>
                                     </g>
                                 </svg>
                             </div>
                             <div class="flex-grow">
-                                <h2 class="text-[#062d60] text-lg title-font font-semibold mb-2">Tech-Powered
-
+                                <h2 class="text-[#062d60] text-lg title-font font-semibold mb-2">Deep Industry Knowledge
                                 </h2>
-                                <p class="leading-relaxed text-sm">We use emerging technologies and accounting networks
-                                    to automate processes, conduct extensive research, and give you command of the data.
-                                    We offer integration of client portal for management of services and more.
+                                <p class="leading-relaxed text-sm">We remain in step with the shifting regulations and
+                                    competitor practices in your industry. We provide vital take aways for businesses
+                                    seeking to strengthen their compliance, financials and performance. </p>
                             </div>
                         </div>
                     </div>
@@ -365,106 +318,208 @@
                             class="flex items-center border-[1px] hover:bg-gray-200 rounded-lg border-gray-300 hover:scale-[1.02] cursor-pointer duration-300 p-5 sm:flex-row flex-col">
                             <div
                                 class="circle w-12 h-12 sm:mr-8  sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-[#7d93cc] flex-shrink-0">
-                                <svg fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                    stroke="#ffffff">
+                                <svg style=" margin: auto;" fill="#fff" viewBox="0 0 36 36" version="1.1"
+                                    preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
+                                        <title>chat-bubble-outline-badged</title>
                                         <path
-                                            d="M3,9A1,1,0,0,0,4,8V5A1,1,0,0,1,5,4H8A1,1,0,0,0,8,2H5A3,3,0,0,0,2,5V8A1,1,0,0,0,3,9ZM8,20H5a1,1,0,0,1-1-1V16a1,1,0,0,0-2,0v3a3,3,0,0,0,3,3H8a1,1,0,0,0,0-2Zm9-7a1,1,0,0,0,0-2H15.86A4,4,0,0,0,13,8.14V7a1,1,0,0,0-2,0V8.14A4,4,0,0,0,8.14,11H7a1,1,0,0,0,0,2H8.14A4,4,0,0,0,11,15.86V17a1,1,0,0,0,2,0V15.86A4,4,0,0,0,15.86,13Zm-5,1a2,2,0,1,1,2-2A2,2,0,0,1,12,14Zm9,1a1,1,0,0,0-1,1v3a1,1,0,0,1-1,1H16a1,1,0,0,0,0,2h3a3,3,0,0,0,3-3V16A1,1,0,0,0,21,15ZM19,2H16a1,1,0,0,0,0,2h3a1,1,0,0,1,1,1V8a1,1,0,0,0,2,0V5A3,3,0,0,0,19,2Z">
-                                        </path>
+                                            d="M33.38,12.69a7.43,7.43,0,0,1-1.89.66A10.35,10.35,0,0,1,32,16.5a11.08,11.08,0,0,1-3.71,8.11,1,1,0,0,0-.32.73l0,5.34-4.38-2.79a1,1,0,0,0-.83-.11A16,16,0,0,1,18,28.5c-7.72,0-14-5.38-14-12s6.28-12,14-12a16,16,0,0,1,4.55.66A7.44,7.44,0,0,1,23,3.22a18,18,0,0,0-5-.72c-8.82,0-16,6.28-16,14s7.18,14,16,14a18,18,0,0,0,4.88-.68l5.53,3.52a1,1,0,0,0,1.54-.84l0-6.73a13,13,0,0,0,4-9.27A12.32,12.32,0,0,0,33.38,12.69Z"
+                                            class="clr-i-outline--badged clr-i-outline-path-1--badged"></path>
+                                        <path d="M11,15.5a1,1,0,0,0,0,2H25a1,1,0,0,0,0-2Z"
+                                            class="clr-i-outline--badged clr-i-outline-path-2--badged"></path>
+                                        <path d="M14.25,20.5a1,1,0,0,0,0,2h7.5a1,1,0,0,0,0-2Z"
+                                            class="clr-i-outline--badged clr-i-outline-path-3--badged"></path>
+                                        <path
+                                            d="M10.28,11.5a1,1,0,0,0,1,1H24.72a1,1,0,0,0,.83-.47A7.53,7.53,0,0,1,24,10.5H11.28A1,1,0,0,0,10.28,11.5Z"
+                                            class="clr-i-outline--badged clr-i-outline-path-4--badged"></path>
+                                        <circle cx="30" cy="6" r="5"
+                                            class="clr-i-outline--badged clr-i-outline-path-5--badged clr-i-badge">
+                                        </circle>
+                                        <rect x="0" y="0" width="36" height="36" fill-opacity="0"></rect>
                                     </g>
                                 </svg>
                             </div>
                             <div class="flex-grow">
-                                <h2 class="text-[#062d60] text-lg title-font font-semibold mb-2">Client-Focused
+                                <h2 class="text-[#062d60] text-lg title-font font-semibold mb-2">Personalized CPA
+                                    Services
                                 </h2>
-                                <p class="leading-relaxed text-sm">As a boutique CPA, we offer the full resources of our
-                                    firm to the needs of each client. This ensures a highly attentive service with a
-                                    combined scope of experience, skills and disciplines.
+                                <p class="leading-relaxed text-sm">We are known for working closely with our clients and
+                                    their in-house team to produce accurate results and guidance towards improved
+                                    internal
+                                    controls, finances and operations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap my-2">
+                        <div class="p-4 lg:w-1/2 md:w-full square">
+                            <div
+                                class="flex items-center border-[1px] hover:bg-gray-200 rounded-lg border-gray-300 hover:scale-[1.02] cursor-pointer duration-300 p-5 sm:flex-row flex-col">
+                                <div
+                                    class="circle w-12 h-12 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-[#7d93cc] flex-shrink-0">
+                                    <svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        stroke="#ffffff">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.918 10.0005H7.082C6.66587 9.99708 6.26541 10.1591 5.96873 10.4509C5.67204 10.7427 5.50343 11.1404 5.5 11.5565V17.4455C5.5077 18.3117 6.21584 19.0078 7.082 19.0005H9.918C10.3341 19.004 10.7346 18.842 11.0313 18.5502C11.328 18.2584 11.4966 17.8607 11.5 17.4445V11.5565C11.4966 11.1404 11.328 10.7427 11.0313 10.4509C10.7346 10.1591 10.3341 9.99708 9.918 10.0005Z"
+                                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.918 4.0006H7.082C6.23326 3.97706 5.52559 4.64492 5.5 5.4936V6.5076C5.52559 7.35629 6.23326 8.02415 7.082 8.0006H9.918C10.7667 8.02415 11.4744 7.35629 11.5 6.5076V5.4936C11.4744 4.64492 10.7667 3.97706 9.918 4.0006Z"
+                                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.082 13.0007H17.917C18.3333 13.0044 18.734 12.8425 19.0309 12.5507C19.3278 12.2588 19.4966 11.861 19.5 11.4447V5.55666C19.4966 5.14054 19.328 4.74282 19.0313 4.45101C18.7346 4.1592 18.3341 3.9972 17.918 4.00066H15.082C14.6659 3.9972 14.2654 4.1592 13.9687 4.45101C13.672 4.74282 13.5034 5.14054 13.5 5.55666V11.4447C13.5034 11.8608 13.672 12.2585 13.9687 12.5503C14.2654 12.8421 14.6659 13.0041 15.082 13.0007Z"
+                                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.082 19.0006H17.917C18.7661 19.0247 19.4744 18.3567 19.5 17.5076V16.4936C19.4744 15.6449 18.7667 14.9771 17.918 15.0006H15.082C14.2333 14.9771 13.5256 15.6449 13.5 16.4936V17.5066C13.525 18.3557 14.2329 19.0241 15.082 19.0006Z"
+                                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class="text-[#062d60] text-lg title-font font-semibold mb-2">Tech-Powered
+
+                                    </h2>
+                                    <p class="leading-relaxed text-sm">We use emerging technologies and accounting
+                                        networks
+                                        to automate processes, conduct extensive research, and give you command of the
+                                        data.
+                                        We offer integration of client portal for management of services and more.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 lg:w-1/2 md:w-full square">
+                            <div
+                                class="flex items-center border-[1px] hover:bg-gray-200 rounded-lg border-gray-300 hover:scale-[1.02] cursor-pointer duration-300 p-5 sm:flex-row flex-col">
+                                <div
+                                    class="circle w-12 h-12 sm:mr-8  sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-[#7d93cc] flex-shrink-0">
+                                    <svg fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                        stroke="#ffffff">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M3,9A1,1,0,0,0,4,8V5A1,1,0,0,1,5,4H8A1,1,0,0,0,8,2H5A3,3,0,0,0,2,5V8A1,1,0,0,0,3,9ZM8,20H5a1,1,0,0,1-1-1V16a1,1,0,0,0-2,0v3a3,3,0,0,0,3,3H8a1,1,0,0,0,0-2Zm9-7a1,1,0,0,0,0-2H15.86A4,4,0,0,0,13,8.14V7a1,1,0,0,0-2,0V8.14A4,4,0,0,0,8.14,11H7a1,1,0,0,0,0,2H8.14A4,4,0,0,0,11,15.86V17a1,1,0,0,0,2,0V15.86A4,4,0,0,0,15.86,13Zm-5,1a2,2,0,1,1,2-2A2,2,0,0,1,12,14Zm9,1a1,1,0,0,0-1,1v3a1,1,0,0,1-1,1H16a1,1,0,0,0,0,2h3a3,3,0,0,0,3-3V16A1,1,0,0,0,21,15ZM19,2H16a1,1,0,0,0,0,2h3a1,1,0,0,1,1,1V8a1,1,0,0,0,2,0V5A3,3,0,0,0,19,2Z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class="text-[#062d60] text-lg title-font font-semibold mb-2">Client-Focused
+                                    </h2>
+                                    <p class="leading-relaxed text-sm">As a boutique CPA, we offer the full resources of
+                                        our
+                                        firm to the needs of each client. This ensures a highly attentive service with a
+                                        combined scope of experience, skills and disciplines.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-    </section>
+        </section>
 
-    <section class="text-gray-600 body-font px-16">
-        <div class="container px-5 py-12 mx-auto flex items-center md:flex-row flex-col">
-          <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
-            <h2 class="text-sm uppercase text-[#7d93cc] tracking-widest font-medium mb-1">Our Professional Network and Credentials</h2>
-            <h1 class="title-font mb-4 sm:text-3xl text-2xl font-bold text-[#062d60]">Memberships and Affiliations</h1>
-        </div>
-          <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
+        <section class="text-gray-600 body-font px-16">
+            <div class="container px-5 py-12 mx-auto flex items-center md:flex-row flex-col">
+                <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
+                    <h2 class="text-sm uppercase text-[#7d93cc] tracking-widest font-medium mb-1">Our Professional
+                        Network and Credentials</h2>
+                    <h1 class="title-font mb-4 sm:text-3xl text-2xl font-bold text-[#062d60]">Memberships and
+                        Affiliations</h1>
+                </div>
+                <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
 
-            <div class="px-4 cursor-pointer hover:scale-[0.95] duration-300 ease-in-out">
-                <img src="https://assets-global.website-files.com/5f91d3666f7836954298e818/5f91d3666f783686a898ea7c_04-image-p-500.png" alt="Logo 1" class="h-24">
-              </div>
-              <div class="px-4 cursor-pointer hover:scale-[0.95] duration-300 ease-in-out">
-                <img src="https://assets-global.website-files.com/5f91d3666f7836954298e818/5f91d3666f783657d698ea78_03-image-p-500.png" alt="Logo 2" class="h-24">
-              </div>
-              <div class="px-4 cursor-pointer hover:scale-[0.95] duration-300 ease-in-out">
-                <img src="https://assets-global.website-files.com/5f91d3666f7836954298e818/5f91d3666f78361fbe98ea79_01-image-p-500.png" alt="Logo 3" class="h-24">
-              </div>
-        </div>
-      </section>
+                    <div class="px-4 cursor-pointer hover:scale-[0.95] duration-300 ease-in-out">
+                        <img src="https://assets-global.website-files.com/5f91d3666f7836954298e818/5f91d3666f783686a898ea7c_04-image-p-500.png"
+                            alt="Logo 1" class="h-24">
+                    </div>
+                    <div class="px-4 cursor-pointer hover:scale-[0.95] duration-300 ease-in-out">
+                        <img src="https://assets-global.website-files.com/5f91d3666f7836954298e818/5f91d3666f783657d698ea78_03-image-p-500.png"
+                            alt="Logo 2" class="h-24">
+                    </div>
+                    <div class="px-4 cursor-pointer hover:scale-[0.95] duration-300 ease-in-out">
+                        <img src="https://assets-global.website-files.com/5f91d3666f7836954298e818/5f91d3666f78361fbe98ea79_01-image-p-500.png"
+                            alt="Logo 3" class="h-24">
+                    </div>
+                </div>
+        </section>
 
-      <footer class="text-gray-200 body-font bg-[#062d60] px-16">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a href="/" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-           <img class="h-12" src="images/logo.png" alt="">
-          </a>
-          <p class="text-sm text-[#7D93CC] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Copyrights <span class=""><a href="">A Bricks CPA</a></span>  | All Rights Reserved
-          </p>
+        <footer class="text-gray-200 body-font bg-[#062d60] px-16">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a href="/"
+                    class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <img class="h-12" src="images/logo.png" alt="">
+                </a>
+                <p class="text-sm text-[#7D93CC] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+                    © 2024 Copyrights <span class=""><a href="">A Bricks CPA</a></span> | All Rights Reserved
+                </p>
 
-          <div class="sm:ml-auto sm:mt-0 mt-4">
-          
-          <span class="flex justify-end items-center">
+                <div class="sm:ml-auto sm:mt-0 mt-4">
 
-            <ul class="flex uppercase text-[#7D93CC] gap-2 text-sm">
-                <li class="cursor-pointer hover:text-white duration-300"><a href="">Privacy Policy</a></li>
-                <li class="cursor-pointer hover:text-white duration-300"><a href="">Terms of Use</a></li>
-              </ul>
+                    <span class="flex justify-end items-center">
 
-              <div class="mx-4 text-[#7D93CC] ">•</div>
+                        <ul class="flex uppercase text-[#7D93CC] gap-2 text-sm">
+                            <li class="cursor-pointer hover:text-white duration-300"><a href="">Privacy Policy</a></li>
+                            <li class="cursor-pointer hover:text-white duration-300"><a href="">Terms of Use</a></li>
+                        </ul>
 
-            <a class="text-[#7D93CC]  cursor-pointer hover:text-white duration-300">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-[#7D93CC] cursor-pointer hover:text-white duration-300">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-[#7D93CC]  cursor-pointer hover:text-white duration-300">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-[#7D93CC]  cursor-pointer hover:text-white duration-300">
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-              </svg>
-            </a>
-          </span>
+                        <div class="mx-4 text-[#7D93CC] ">•</div>
 
-          <!-- <ul class="flex uppercase text-[#7D93CC] gap-2 text-xs mt-4">
+                        <a class="text-[#7D93CC]  cursor-pointer hover:text-white duration-300">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-[#7D93CC] cursor-pointer hover:text-white duration-300">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-[#7D93CC]  cursor-pointer hover:text-white duration-300">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-[#7D93CC]  cursor-pointer hover:text-white duration-300">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path stroke="none"
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                        </a>
+                    </span>
+
+                    <!-- <ul class="flex uppercase text-[#7D93CC] gap-2 text-xs mt-4">
             <li class="cursor-pointer hover:text-white duration-300"><a href="">Privacy Policy</a></li>
             <li class="cursor-pointer hover:text-white duration-300"><a href="">Terms of Use</a></li>
           </ul> -->
-        </div>
-         
-        </div>
+                </div>
 
-        
-      </footer>
+            </div>
 
-<script src="script.js"></script>
-</main>
+
+        </footer>
+
+        <script src="script.js"></script>
+    </main>
 
 </body>
 
