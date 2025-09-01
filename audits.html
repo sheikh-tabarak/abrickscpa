@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Statement Audits | Bricks CPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    <!-- Just Used for development purpose as I am using the header, footer and CTA in seperate files to avoid multiple changes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+            $("#final-cta-placeholder").load("final-cta.html");
+
+        });
+    </script>
+    <!-- Just Used for development purpose as I am using the header, footer and CTA in seperate files to avoid multiple changes -->
+
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <div id="header-placeholder"></div>
+
+       <!-- HERO -->
+    <section class="relative bg-[#062d60] text-white">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0">
+            <img src="images/audit-bg.jpg" alt="Financial background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60"></div> <!-- Dark overlay for readability -->
+        </div>
+
+        <!-- Content -->
+        <div class="relative max-w-6xl mx-auto px-6 py-32 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                Financial Statement Audits
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+                    Maximum Level Assurance with Empowering Business Insights
+            </p>
+ 
+        </div>
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="py-24 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-6xl mx-auto px-6 text-center md:text-left">
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-[#062d60] leading-relaxed">
+                Independent Audits for<br> <span class="bg-[#e5e65e] px-4 rounded-md leading-[2]">Stronger Business
+                    Foundations</span>
+            </h2>
+            <p class="mt-8 text-lg text-gray-600 leading-relaxed max-w-4xl">
+                A Bricks CPA delivers bespoke financial audit services designed to provide maximum assurance
+                and empower business decisions. Every business stands to benefit from an independent audit
+                framework shaped by specialized industry knowledge and technology.
+            </p>
+            <p class="mt-5 text-lg text-gray-600 leading-relaxed max-w-4xl">
+                Our audits take into account your business’s unique position and objectives. Through rigorous
+                quality control, risk mitigation, and process improvement strategies, we provide more than
+                verification — <span class="font-semibold text-[#062d60]">we deliver actionable insights</span>
+                into your operations and financial health.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA BLOCK -->
+    <section class="py-20 bg-[#062d60]  border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-8 py-14 bg-white rounded-3xl shadow-xl text-center">
+            <h2 class="text-3xl font-bold text-[#062d60] leading-snug">
+                Does Your Business Require a Financial Audit?
+            </h2>
+            <p class="mt-6 text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Beyond compliance, an audit with A Bricks CPA delivers accurate verification of financial
+                statements in accordance with GAAP and GAAS...
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="contact.html"
+                    class="bg-[#e5e65e] text-gray-900 font-semibold px-8 py-4 rounded-xl shadow-md hover:shadow-xl hover:bg-[#d4d55b] transition-all duration-300">
+                    Get Started
+                </a>
+                <a href="#industries" class="text-[#062d60] font-medium hover:text-[#041d3e] transition">
+                    Learn More →
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- INDUSTRIES -->
+    <section id="industries" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-[#062d60]">Industries We Audit</h2>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                Our expertise spans multiple industries — delivering compliance and confidence everywhere.
+            </p>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14">
+                <div
+                    class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-transform duration-300">
+                    <div class="text-4xl mb-3">🏛️</div>
+                    <div class="text-[#062d60] text-lg font-semibold">Non-Profit</div>
+                </div>
+                <div
+                    class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-transform duration-300">
+                    <div class="text-4xl mb-3">📑</div>
+                    <div class="text-[#062d60] text-lg font-semibold">Non-Profit (Single Audit)</div>
+                </div>
+                <div
+                    class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-transform duration-300">
+                    <div class="text-4xl mb-3">🏭</div>
+                    <div class="text-[#062d60] text-lg font-semibold">Manufacturing</div>
+                </div>
+                <div
+                    class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-transform duration-300">
+                    <div class="text-4xl mb-3">🚧</div>
+                    <div class="text-[#062d60] text-lg font-semibold">Construction</div>
+                </div>
+                <div
+                    class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-transform duration-300">
+                    <div class="text-4xl mb-3">⛽</div>
+                    <div class="text-[#062d60] text-lg font-semibold">Oil & Gas</div>
+                </div>
+                <div
+                    class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-transform duration-300">
+                    <div class="text-4xl mb-3">🏢</div>
+                    <div class="text-[#062d60] text-lg font-semibold">Common Interest Realty Association</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR APPROACH -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="overflow-hidden rounded-3xl shadow-xl">
+                <img src="images/audit-approach.jpg" alt="Audit Process"
+                    class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-[#062d60]">Our Approach</h2>
+                <p class="mt-6 text-gray-600 leading-relaxed">
+                    We collaborate closely with your in-house accounting team as dedicated auditors. By
+                    leveraging modern technologies, we perform in-depth financial audits without disrupting
+                    your business workflows.
+                </p>
+                <ul class="mt-8 space-y-4 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-600 text-xl">✔</span>
+                        <span><strong>Competitor research</strong> & risk assessments</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-600 text-xl">✔</span>
+                        <span><strong>Workflow reviews</strong> & compliance alignment</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-600 text-xl">✔</span>
+                        <span><strong>Software integration</strong> for accuracy & speed</span>
+                    </li>
+                </ul>
+                <p class="mt-6 text-gray-600 leading-relaxed">
+                    By integrating audits with advanced software, we increase accuracy, efficiency, and data
+                    security — while reducing errors, costs, and time. With A Bricks CPA, businesses gain much
+                    more than a financial audit: they gain <span class="text-[#062d60] font-semibold">clarity and
+                        confidence</span>
+                    in their future.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="final-cta-placeholder"></div>
+
+    <div id="footer-placeholder"></div>
+
+</body>
+
+</html>

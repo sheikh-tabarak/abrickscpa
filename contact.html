@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Bricks CPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    <!-- Just Used for development purpose as I am using the header, footer and CTA in seperate files to avoid multiple changes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+            $("#final-cta-placeholder").load("final-cta.html");
+
+        });
+    </script>
+    <!-- Just Used for development purpose as I am using the header, footer and CTA in seperate files to avoid multiple changes -->
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- HERO -->
+    <section class="bg-[#062d60] text-white py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold">Contact A Bricks CPA Today!</h1>
+            <p class="mt-4 text-lg text-gray-200 max-w-3xl mx-auto">
+                Get in touch with us to secure your financial future with trusted CPA assurance services.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="py-20 bg-white flex-grow">
+        <div class="max-w-3xl mx-auto px-6">
+            <form action="#" method="POST" class="bg-gray-50 shadow-md rounded-lg p-8 space-y-6">
+
+                <!-- Name -->
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700">Your Name <span
+                            class="text-red-500">*</span></label>
+                    <input type="text" name="name" required
+                        class="mt-2 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#062d60] focus:outline-none">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700">Your Email <span
+                            class="text-red-500">*</span></label>
+                    <input type="email" name="email" required
+                        class="mt-2 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#062d60] focus:outline-none">
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700">Company Name</label>
+                    <input type="text" name="company"
+                        class="mt-2 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#062d60] focus:outline-none">
+                </div>
+
+                <!-- Phone -->
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700">Your Number <span
+                            class="text-red-500">*</span></label>
+                    <input type="tel" name="phone" required
+                        class="mt-2 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#062d60] focus:outline-none">
+                </div>
+
+                <!-- Notes -->
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700">Additional Notes</label>
+                    <textarea name="notes" rows="4"
+                        class="mt-2 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#062d60] focus:outline-none"></textarea>
+                </div>
+
+                <!-- Terms -->
+                <div class="flex items-start">
+                    <input id="terms" type="checkbox" required class="h-4 w-4 text-[#062d60] border-gray-300 rounded">
+                    <label for="terms" class="ml-2 text-sm text-gray-600">I agree to the <a href="terms.html"
+                            class="text-[#062d60] underline">Terms &amp; Conditions</a></label>
+                </div>
+
+                <!-- Submit -->
+                <div>
+                    <button type="submit"
+                        class="w-full bg-[#062d60] text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#041f42] transition">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div id="final-cta-placeholder"></div>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+</body>
+
+</html>

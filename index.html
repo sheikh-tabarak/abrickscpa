@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bricks CPA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="utils/global.css"> -->
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+  <!-- Just Used for development purpose as I am using the header, footer and CTA in seperate files to avoid multiple changes -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#header-placeholder").load("header.html");
+      $("#footer-placeholder").load("footer.html");
+      $("#membership-placeholder").load("membership.html");
+    });
+  </script>
+  <!-- Just Used for development purpose as I am using the header, footer and CTA in seperate files to avoid multiple changes -->
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+  <div id="header-placeholder"></div>
+
+  <!-- HERO -->
+  <section class="bg-[#062d60] text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-16 py-20 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="uppercase bg-[#7d93cc] px-4 py-1 rounded-full text-sm tracking-wide">Trusted Texas CPA</span>
+        <h1 class="text-4xl lg:text-5xl font-bold mt-6 leading-tight">Audits, Reviews, and Compilations</h1>
+        <p class="mt-6 text-lg text-gray-200 leading-relaxed">
+          A Bricks CPA provides specialized assurance services for businesses, delivering expert insights that elevate
+          financials, operations, and strategy.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <button
+            class="bg-[#E5E65D] text-[#062d60] font-semibold px-6 py-3 rounded-lg shadow hover:scale-105 transition">Get
+            Started</button>
+          <button
+            class="bg-white text-gray-700 font-semibold px-6 py-3 rounded-lg shadow hover:scale-105 transition">Book a
+            Demo</button>
+        </div>
+      </div>
+      <div class="absolute bottom-0 right-0">
+        <img src="images/bricks-cpa.png" alt="Dashboard preview" class="rounded-lg h-[480px] shadow-lg">
+        <!-- <img src="images/man.jpg" alt="CPA professional"
+          class="absolute -bottom-10 -right-10 w-64 lg:w-80 rounded-xl shadow-xl hidden lg:block"> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-sm uppercase text-[#7d93cc] tracking-wide font-medium">My Services</h2>
+      <h1 class="text-3xl lg:text-4xl font-bold text-[#062d60] mt-2">Industries We Serve</h1>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        We bring industry-specific expertise to ensure seamless integration of assurance services into your financial
+        operations.
+      </p>
+
+      <!-- Chips -->
+      <div class="flex flex-wrap justify-center gap-3 mt-8">
+        <span
+          class="px-4 py-2 bg-white border rounded-full text-gray-700 hover:bg-[#e5e65e] hover:text-gray-900 cursor-pointer transition">Non-profit</span>
+        <span
+          class="px-4 py-2 bg-white border rounded-full text-gray-700 hover:bg-[#e5e65e] hover:text-gray-900 cursor-pointer transition">Single
+          Audit</span>
+        <span
+          class="px-4 py-2 bg-white border rounded-full text-gray-700 hover:bg-[#e5e65e] hover:text-gray-900 cursor-pointer transition">Manufacturing</span>
+        <span
+          class="px-4 py-2 bg-white border rounded-full text-gray-700 hover:bg-[#e5e65e] hover:text-gray-900 cursor-pointer transition">Construction</span>
+        <span
+          class="px-4 py-2 bg-white border rounded-full text-gray-700 hover:bg-[#e5e65e] hover:text-gray-900 cursor-pointer transition">Oil
+          & Gas</span>
+        <span
+          class="px-4 py-2 bg-white border rounded-full text-gray-700 hover:bg-[#e5e65e] hover:text-gray-900 cursor-pointer transition">Realty
+          Association</span>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="grid lg:grid-cols-3 gap-8 mt-12">
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-2">
+          <img src="icons/audits.svg" class="mx-auto w-20 h-20" alt="Audits Icon">
+          <h3 class="text-[#062d60] font-semibold text-xl mt-6">Financial Statement Audits</h3>
+          <p class="text-gray-500 mt-4">Maximum assurance with expert audits that strengthen compliance and
+            decision-making.</p>
+          <a href="#"
+            class="inline-block mt-6 bg-[#e5e65e] px-5 py-2 rounded-md font-semibold text-gray-700 hover:bg-[#d4d55b] transition">Learn
+            More</a>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-2">
+          <img src="icons/review.svg" class="mx-auto w-20 h-20" alt="Review Icon">
+          <h3 class="text-[#062d60] font-semibold text-xl mt-6">Financial Statement Reviews</h3>
+          <p class="text-gray-500 mt-4">Accurate, cost-effective reviews tailored to your business needs.</p>
+          <a href="#"
+            class="inline-block mt-6 bg-[#e5e65e] px-5 py-2 rounded-md font-semibold text-gray-700 hover:bg-[#d4d55b] transition">Learn
+            More</a>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-2">
+          <img src="icons/compilations.svg" class="mx-auto w-20 h-20" alt="Compilations Icon">
+          <h3 class="text-[#062d60] font-semibold text-xl mt-6">Financial Statement Compilations</h3>
+          <p class="text-gray-500 mt-4">Clear, precise statements compiled with industry expertise.</p>
+          <a href="#"
+            class="inline-block mt-6 bg-[#e5e65e] px-5 py-2 rounded-md font-semibold text-gray-700 hover:bg-[#d4d55b] transition">Learn
+            More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-sm uppercase text-[#7d93cc] tracking-wide font-medium">Why Choose Us</h2>
+      <h1 class="text-3xl lg:text-4xl font-bold text-[#062d60] mt-2">Why Choose A Bricks CPA</h1>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Our proven expertise and client-first approach make us the preferred choice for assurance services in Texas.
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12 text-left">
+
+        <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition group cursor-pointer ">
+
+          <div
+            class=" w-20 h-20 sm:mr-8 mb-3 inline-flex justify-center items-center rounded-lg bg-[#7d93cc] flex-shrink-0   transition-all duration-500 group-hover:rotate-[3deg]">
+            <img src="icons/deepresearch.svg" class="w-14 h-14" alt="">
+          </div>
+          <h3 class="font-semibold text-lg text-[#062d60]">Deep Industry Knowledge</h3>
+          <p class="text-gray-500 mt-2">
+            We remain in step with the shifting regulations and competitor practices in your industry. We provide vital
+            take aways for businesses seeking to strengthen their compliance, financials and performance.
+          </p>
+        </div>
+
+
+        <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition group cursor-pointer ">
+          <div
+            class=" w-20 h-20 sm:mr-8 mb-3 inline-flex justify-center items-center rounded-lg bg-[#7d93cc] flex-shrink-0 transition-all duration-500 group-hover:rotate-[3deg]">
+
+            <img src="icons/personlized.svg" class="w-14 h-14" alt="">
+          </div>
+
+          <h3 class="font-semibold text-lg text-[#062d60]">Personalized CPA Services</h3>
+          <p class="text-gray-500 mt-2">
+            We are known for working closely with our clients and their in-house team to produce accurate results and
+            guidance towards improved internal controls, finances and operations.
+          </p>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition group cursor-pointer ">
+          <div
+            class=" w-20 h-20 sm:mr-8 mb-3 inline-flex justify-center items-center rounded-lg bg-[#7d93cc] flex-shrink-0   transition-all duration-500 group-hover:rotate-[3deg]">
+            <img src="icons/techpowered.svg" class="w-14 h-14" alt="">
+          </div>
+
+          <h3 class="font-semibold text-lg text-[#062d60]">Tech-Powered</h3>
+          <p class="text-gray-500 mt-2">
+            We use emerging technologies and accounting networks to automate processes, conduct extensive research, and
+            give you command of the data. We offer integration of digital features for management
+          </p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition group cursor-pointer ">
+          <div
+            class=" w-20 h-20 sm:mr-8 mb-3 inline-flex justify-center items-center rounded-lg bg-[#7d93cc] flex-shrink-0   transition-all duration-500 group-hover:rotate-[3deg]">
+
+            <img src="icons/clientfocused.svg" class="w-14 h-14" alt="">
+          </div>
+
+          <h3 class="font-semibold text-lg text-[#062d60]">Client-Focused</h3>
+          <p class="text-gray-500 mt-2">
+            As a boutique CPA, we offer the full resources of our firm to the needs of each client. This ensures a
+            highly attentive service with a combined scope of experience, skills and disciplines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="membership-placeholder"></div>
+
+  <div id="footer-placeholder"></div>
+
+</body>
+
+</html>

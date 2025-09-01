@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | Bricks CPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .faq-answer {
+            height: '0px';
+            max-height: 0;
+            overflow: hidden;
+
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+
+        .faq-answer.open {
+            height: fit-content;
+            max-height: 1000px;
+            padding-bottom: 1rem;
+            /* big enough to fit content */
+            padding-top: 1rem;
+            /* add padding when open */
+        }
+    </style>
+
+    <!-- Just Used for development purpose as I am using the header, footer and CTA in seperate files to avoid multiple changes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+            $("#final-cta-placeholder").load("final-cta.html");
+        });
+
+
+
+    </script>
+    <!-- Just Used for development purpose as I am using the header, footer and CTA in seperate files to avoid multiple changes -->
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- HERO -->
+    <section class="bg-[#062d60] text-white py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold">Frequently Asked Questions</h1>
+            <p class="mt-4 text-lg text-gray-200 max-w-3xl mx-auto">
+                Get clear answers about CPA assurance, audits, reviews, and compilations.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ LIST -->
+    <section class="py-20 bg-white flex-grow">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="space-y-6">
+
+                <!-- FAQ Item -->
+                <div class="faq-item border rounded-lg shadow-sm">
+                    <button
+                        class="faq-question w-full text-left px-6 py-4 font-semibold text-[#062d60] flex justify-between items-center">
+                        What is a Certified Public Accountant?
+                        <span class="ml-2">+</span>
+                    </button>
+                    <div class="faq-answer px-6 text-gray-600">
+                        A Certified Public Accountant, or a CPA, is the official designation of a licensed accounting
+                        professional with credentials that include:<br><br>
+                        • Qualifies as a CPA Under State Rules and Regulations<br>
+                        • Possesses Unique Educational and Experiential Requirements<br>
+                        • Is Qualified to Offer Financial Attestation and Advisory Services guided by Ethical Standards
+                        and a Professional Code of Conduct
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-lg shadow-sm">
+                    <button
+                        class="faq-question w-full text-left px-6 py-4 font-semibold text-[#062d60] flex justify-between items-center">
+                        Why Do I Need a CPA for Assurance?
+                        <span class="ml-2">+</span>
+                    </button>
+                    <div class="faq-answer px-6 text-gray-600">
+                        As a certified third party, a CPA is qualified to perform assurance services in fulfillment of
+                        certain requirements outlined by the user of the financial statement. There are three levels of
+                        assurance offered by a CPA: Audit (maximum), Review (limited), and Compilation (basic). A Bricks
+                        CPA can help determine the most suitable assurance service for your needs.
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-lg shadow-sm">
+                    <button
+                        class="faq-question w-full text-left px-6 py-4 font-semibold text-[#062d60] flex justify-between items-center">
+                        Why Do I Need a Financial Statement Audit?
+                        <span class="ml-2">+</span>
+                    </button>
+                    <div class="faq-answer px-6 text-gray-600">
+                        An audit may be necessary to obtain the maximum level of assurance requested by the financial
+                        statement user. It may be required by stakeholders, regulators, lenders, creditors, donors, or
+                        investors to verify financial statements are free of errors and misstatements.
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-lg shadow-sm">
+                    <button
+                        class="faq-question w-full text-left px-6 py-4 font-semibold text-[#062d60] flex justify-between items-center">
+                        How Does a Financial Audit Work?
+                        <span class="ml-2">+</span>
+                    </button>
+                    <div class="faq-answer px-6 text-gray-600">
+                        During a Financial Audit, a CPA collaborates with your accountants, management team, and
+                        executives to evaluate financial statements and accounts. This includes auditing income
+                        statements, balance sheets, cash flow, inventory, invoices, internal controls, tax compliance,
+                        debts, leases, and more—performed under GAAP and GAAS. Audits typically involve planning,
+                        internal control review, testing, and reporting.
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-lg shadow-sm">
+                    <button
+                        class="faq-question w-full text-left px-6 py-4 font-semibold text-[#062d60] flex justify-between items-center">
+                        As a Client, What Benefits Can I Expect from Your Services?
+                        <span class="ml-2">+</span>
+                    </button>
+                    <div class="faq-answer px-6 text-gray-600">
+                        All assurance services are performed independently and objectively, ensuring fair and accurate
+                        financial statements. Clients gain insights into compliance, risk mitigation, and process
+                        improvements. As industry specialists, we also refine financial processes, align with best
+                        practices, and deliver actionable insights.
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-lg shadow-sm">
+                    <button
+                        class="faq-question w-full text-left px-6 py-4 font-semibold text-[#062d60] flex justify-between items-center">
+                        What is Your Confidentiality Policy?
+                        <span class="ml-2">+</span>
+                    </button>
+                    <div class="faq-answer px-6 text-gray-600">
+                        All of our services include a strict confidentiality agreement to protect your financial
+                        information. No information accessed or discussed with A Bricks CPA will be shared unless
+                        instructed by you.
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-lg shadow-sm">
+                    <button
+                        class="faq-question w-full text-left px-6 py-4 font-semibold text-[#062d60] flex justify-between items-center">
+                        What is Your Availability?
+                        <span class="ml-2">+</span>
+                    </button>
+                    <div class="faq-answer px-6 text-gray-600">
+                        We provide assurance services 365 days a year, both on a scheduled basis and in emergency CPA
+                        cases. Whether you need an audit, review, or compilation—or just have questions—we are here to
+                        support your business goals.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="final-cta-placeholder"></div>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector("span");
+
+                // close all others (true accordion)
+                document.querySelectorAll(".faq-answer").forEach(a => {
+                    if (a !== answer) {
+                        a.classList.remove("open");
+                        a.previousElementSibling.querySelector("span").textContent = "+";
+                    }
+                });
+
+                // toggle current
+                answer.classList.toggle("open");
+                icon.textContent = answer.classList.contains("open") ? "–" : "+";
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
