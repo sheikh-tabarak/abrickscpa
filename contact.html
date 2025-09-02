@@ -85,9 +85,10 @@
                 <div>
                     <label class="block text-sm font-semibold text-gray-700">Select Service <span
                             class="text-red-500">*</span></label>
-                    <select name="service" required
+                    <select id="service-select" name="service" required
                         class="mt-2 w-full px-4 py-3 border rounded-lg bg-white focus:ring-2 focus:ring-[#062d60] focus:outline-none">
                         <option value="">Please choose a service</option>
+                        <option value="demo">Book a demo</option>
                         <option value="audits">Financial Statement Audits</option>
                         <option value="reviews">Financial Statement Reviews</option>
                         <option value="compilations">Financial Statement Compilations</option>
@@ -122,8 +123,8 @@
                 <!-- Terms -->
                 <div class="flex items-start">
                     <input id="terms" type="checkbox" required class="h-4 w-4 text-[#062d60] border-gray-300 rounded">
-                    <label for="terms" class="ml-2 text-sm text-gray-600">I agree to the <a target="_blank" href="terms-of-use.html"
-                            class="text-[#062d60] underline">Terms &amp; Conditions</a></label>
+                    <label for="terms" class="ml-2 text-sm text-gray-600">I agree to the <a target="_blank"
+                            href="terms-of-use.html" class="text-[#062d60] underline">Terms &amp; Conditions</a></label>
                 </div>
 
                 <!-- Submit -->
@@ -144,5 +145,25 @@
     <div id="footer-placeholder"></div>
 
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Get query params
+        const params = new URLSearchParams(window.location.search);
+        const serviceParam = params.get("service");
+
+        if (serviceParam) {
+            const select = document.getElementById("service-select");
+            // Match param ignoring case
+            const optionToSelect = [...select.options].find(
+                opt => opt.value.toLowerCase() === serviceParam.toLowerCase()
+            );
+            if (optionToSelect) {
+                optionToSelect.selected = true;
+            }
+        }
+    });
+
+</script>
 
 </html>
