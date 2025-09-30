@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiffany Cai - Bricks CPA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#header-placeholder").load("../header.html");
+      $("#footer-placeholder").load("../footer.html");
+    });
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+  <div id="header-placeholder"></div>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-r from-[#062d60] to-[#0a3a80] text-white py-16">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h1 class="text-4xl md:text-5xl font-bold">Tiffany Cai</h1>
+      <p class="mt-2 text-lg text-gray-200">Manager</p>
+    </div>
+  </section>
+
+       <!-- BREADCRUMB -->
+    <nav class="bg-gray-100 py-4" aria-label="Breadcrumb">
+        <div class="max-w-6xl mx-auto px-6">
+            <ol class="flex items-center space-x-2 text-sm text-gray-500">
+                <!-- Home -->
+                <li>
+                    <a href="/" class="hover:text-[#062d60] transition">Home</a>
+                </li>
+                <li>
+                    <span class="text-gray-400">/</span>
+                </li>
+                <!-- Team -->
+                <li>
+                    <a href="../team.html" class="hover:text-[#062d60] transition">Team</a>
+                </li>
+                <li>
+                    <span class="text-gray-400">/</span>
+                </li>
+                <!-- Current Member -->
+                <li class="text-gray-700 font-medium">
+                  Tiffany Cai
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+  <!-- PROFILE -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="flex justify-center">
+        <img src="../images/tiffany-manager.jpg" alt="Tiffany Cai"
+          class="rounded-2xl shadow-lg w-full max-w-xs object-cover object-top transform transition duration-500">
+      </div>
+      <div class="space-y-6 text-gray-600 leading-relaxed">
+        <p>
+          Tiffany was born in France and holds dual degrees in Languages for Business and Accounting & Finance from
+          University of Nantes and University of Houston. With expertise in auditing, taxation, and financial reporting,
+          she excels in building long-term, trustful relationships.
+        </p>
+        <p>
+          She speaks English, French, and Vietnamese, bringing cultural fluency and global insight to her work with
+          clients. Tiffany’s diverse skillset enables her to adapt across industries and provide exceptional support to
+          businesses navigating financial complexities.
+        </p>
+
+        <blockquote class="border-l-4 border-[#062d60] pl-4 italic text-gray-700">
+          "Trust and strong relationships are the foundation of every client success story."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+</body>
+</html>

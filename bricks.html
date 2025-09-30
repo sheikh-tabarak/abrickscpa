@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bricks Coggin - Bricks CPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header-placeholder").load("../header.html");
+            $("#footer-placeholder").load("../footer.html");
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <div id="header-placeholder"></div>
+
+    <!-- HERO -->
+    <section class="relative bg-gradient-to-r from-[#062d60] to-[#0a3a80] text-white py-20">
+        <div class="max-w-5xl mx-auto text-center px-6">
+            <!-- <img src="images/bcoggin-team-owner.jpg" alt="Bricks Coggin"
+                class="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-xl mb-6 object-cover"> -->
+            <h1 class="text-4xl md:text-5xl font-bold">Bricks Coggin</h1>
+            <p class="mt-2 text-lg text-gray-200">Owner & Associate Partner</p>
+        </div>
+    </section>
+
+       <!-- BREADCRUMB -->
+    <nav class="bg-gray-100 py-4" aria-label="Breadcrumb">
+        <div class="max-w-6xl mx-auto px-6">
+            <ol class="flex items-center space-x-2 text-sm text-gray-500">
+                <!-- Home -->
+                <li>
+                    <a href="/" class="hover:text-[#062d60] transition">Home</a>
+                </li>
+                <li>
+                    <span class="text-gray-400">/</span>
+                </li>
+                <!-- Team -->
+                <li>
+                    <a href="../team.html" class="hover:text-[#062d60] transition">Team</a>
+                </li>
+                <li>
+                    <span class="text-gray-400">/</span>
+                </li>
+                <!-- Current Member -->
+                <li class="text-gray-700 font-medium">
+                   Bricks Coggin
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- PROFILE -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+            <!-- Left image with hover effect -->
+            <!-- <div class="flex justify-center "> -->
+
+            <div class="relative h-full">
+                <div class="md:sticky md:top-32 flex justify-center">
+                    <img src="images/bcoggin-team-owner.jpg" alt="Bricks Coggin"
+                        class="rounded-2xl shadow-lg w-full max-w-xs object-cover object-top transform transition duration-500">
+
+                </div>
+            </div>
+
+            <!-- Right text -->
+            <div class="space-y-6 text-gray-600 leading-relaxed">
+                <p>
+                    <strong>Bricks Coggin</strong> is the owner of A Bricks Coggin CPA, PLLC and serves as associate
+                    partner who
+                    works directly with our clients in every aspect of our CPA services. Bricks has over 13 years’
+                    auditing experience with specialism in non-profit organizations, government, single audits, and
+                    manufacturing and construction industries. Notable organizations and agencies where Bricks has taken
+                    part include AICPA and the TXCPA.
+                </p>
+                <p>
+                    Now a trusted Texas CPA for over 6 years, Bricks offers his extensive experience to the needs of
+                    businesses and individuals through a boutique firm that organizes CPA services specifically around
+                    the client. With A Bricks Coggin CPA, PLLC, Bricks has the pleasure of meeting with clients and
+                    discussing their various financial and business goals while creating personalized strategies just
+                    for them. Before founding his own firm, Bricks believed that high-touch CPA services were getting
+                    harder and harder to come by for businesses, and that a one-size-fits-all approach actually created
+                    disadvantages for businesses on both sides of the scale. That is why he is never too eager to
+                    outgrow his firm’s primary purpose. It turns out that’s exactly what people always need.
+                </p>
+
+                <!-- Quote block -->
+                <blockquote class="border-l-4 border-[#062d60] pl-4 italic text-gray-700">
+                    "For me, coming to work every day is never just about the numbers — it’s about building bonds with
+                    the very community I live in."
+                </blockquote>
+
+                <p>
+                    Born in Mobile, Alabama, Bricks moved to Texas at the early age of three, but still counts himself
+                    as a Very Proud Texan! Bricks enjoys his Texas lifestyle full of family, pets, and the great
+                    outdoors. He has four Goldendoodle dogs, named Hono, Lulu, Kiki, and Waialae, and loves to sail,
+                    row, and just about anything that gets him out on the water.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+</body>
+
+</html>
